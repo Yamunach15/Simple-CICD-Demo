@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<style> 
+.container {
+display: flex; 
+gap: 10px; 
+} 
+.box { 
+width: 100px; 
+      height: 100px; 
+      background-color: orchid; 
+      color: white; 
+      text-align: middle; 
+      line-height: 100px; 
+    } 
+ 
+    @media (max-width: 900px) { 
+      .container { 
+        flex-direction:column; 
+      } 
+    } 
+ 
+    @media (max-width: 600px) { 
+      .container { 
+        flex-direction: column-reverse; 
+      } 
+    } 
+  </style> 
+  <title>Media Query - Flex Direction</title> 
+</head> 
+<body> 
+  <div class="container"> 
+    <div class="box">K-Drama</div> 
+    <div class="box">Anime</div> 
+    <div class="box">Spotify</div> 
+<div class="box">CSS</div>
+<div class="box">Repeat</div>
+  </div> 
+</body> 
+</html>
+
+ 
+ 
